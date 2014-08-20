@@ -1,0 +1,30 @@
+
+	<div class="head_top"
+			<header class="logo">
+			    {{#if @blog.logo}}
+			    	<a class="logo__image" href="{{@blog.url}}">
+			    		<img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
+			    	</a>
+			    {{else}}
+				    <h1 class="logo__title">
+				    	<a href="{{@blog.url}}" class="logo__link">{{@blog.title}}</a>
+				    </h1>
+				    {{#if @blog.description}}
+				    <h2 class="logo__desc">{{@blog.description}}</h2>
+				    {{/if}}
+			    {{/if}}
+			</header>
+			{{! Put your menu content here or make this file empty in order to remove the menu }}
+			<nav class="menu">
+				<div class="menu__wrap">
+					<a href="/" class="menu__item menu__item--active">Index</a>
+					<a href="/about" class="menu__item">About</a>
+					<a href="http://blog.cai-cai.me" class="menu__item">Blog</a>
+					<a href="/tag/photo" class="menu__item">Photo</a>
+					<a href="/tag/desgin" class="menu__item">Desgin</a>
+					<a href="https://twitter.com/hi_caicai" class="menu__item">Twitter</a>
+					<a href="https://dribbble.com/hicaicai" class="menu__item">Dribbble</a>
+					<a href="http://instagram.com/hi_caicai" class="menu__item">Instagram</a>
+				</div>
+			</nav>
+	</div>
