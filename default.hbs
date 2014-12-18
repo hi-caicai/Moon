@@ -10,7 +10,6 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
@@ -22,7 +21,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.useso.com/css?family=Open+Sans:300,400,500,700" />
+    <link rel="stylesheet" type="text/css" href=" https://fonts.cai-cai.me/css?family=Open+Sans:400,300,600,700" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" /> google被墙，你可以自己反向代理一个fonts,具体操作可以联系我>
 
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,17 +44,8 @@
 
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
     <script type="text/javascript">
       {{> config}}
-
-      (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
-      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
-      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
-      t.src='//www.google-analytics.com/analytics.js';
-      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
-      ga('create',ga_ua);ga('send','pageview');
-
       (function () {
       var s = document.createElement('script'); s.async = true;
       s.type = 'text/javascript';
