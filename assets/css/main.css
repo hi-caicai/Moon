@@ -231,7 +231,10 @@ main {
 	text-align: center;
 	width: 100%;
 }
-
+.footer_language{
+	width: 200px;
+	margin: 0 auto;
+}
 .footer__text {
 	margin: 0;
 }
