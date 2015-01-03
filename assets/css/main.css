@@ -155,7 +155,9 @@ main {
 }
 .logo__image {
 
-.logo_text {
+
+}
+.logo_text{
 	float: left;
 }
 .logo__title {
