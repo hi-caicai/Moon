@@ -191,9 +191,8 @@ main {
 ----------------------------------*/
 
 .menu {
-	margin-top: 76px;
-	margin-right: -10px;
-	text-align: center;
+	margin-top: 73px;
+	text-align: right;
 	float: right;
 
 }
@@ -703,13 +702,12 @@ ul {
 		border-radius: 2px;
 		left: -9999px;
 		position: absolute;
-		width: 300px;
+		width: 100px;
 
 	}
 
 	.menu__item {
 		border-top: 1px solid #e5e5e5;
-		width: 100%;
 	}
 
 	.menu__item--active {
