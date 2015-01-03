@@ -142,10 +142,20 @@ main {
 /*---------------------------------
 2.1 Logo
 ----------------------------------*/
+.logo {
+	background: #fff;
+	color: #000;
+	height: 200px;
+	/*text-align: center;*/
+	/*-width: 920px;*/
+	margin:0 auto; 
+	float: right;
+	width: 450px;
 
+}
 .logo__image {
 
-.logo {
+.logo_text {
 	float: left;
 }
 .logo__title {
