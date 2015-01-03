@@ -155,7 +155,10 @@ main {
 }
 .logo__image {
 
+.logo_text {
+	float: left;
 
+}
 }
 .logo__title {
 	font-size: 25px;
@@ -188,7 +191,7 @@ main {
 ----------------------------------*/
 
 .menu {
-	margin-top: -45px;
+	margin-top: 76px;
 	margin-right: -10px;
 	text-align: center;
 	float: right;
