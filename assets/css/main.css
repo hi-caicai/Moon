@@ -88,7 +88,7 @@ a,
 
 }
 .head_top {
-	width: 920px;
+	max-width: 920px;
 	margin:0 auto; 
 	height: 220px;
 
