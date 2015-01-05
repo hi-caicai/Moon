@@ -159,6 +159,7 @@ main {
 }
 .logo_text{
 	float: left;
+	padding-left: 10px;
 }
 .logo__title {
 	font-size: 25px;
@@ -192,7 +193,7 @@ main {
 
 .menu {
 	margin-top: 73px;
-	text-align: left;
+	text-align: right;
 	float: left;
 
 }
@@ -684,10 +685,12 @@ ul {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 920px) {
 	.menu {
 		padding: 0 0 30px 0;
-		position: relative;
+		position: absolute;
+		right: 10px;
+		z-index: 1;
 	}
 
 	.menu:before {
@@ -698,28 +701,32 @@ ul {
 	}
 
 	.menu__wrap {
-		background: #fff;
-		border-radius: 2px;
+		background: #FFDE5C;
+		border-radius: 3px;
 		left: -9999px;
 		position: absolute;
-		width: 100px;
+		width: 120px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+
+
 
 	}
 
 	.menu__item {
-		border-top: 1px solid #e5e5e5;
 	}
 
 	.menu__item--active {
-		background: #5cc1a9;
 		border-color: #5cc1a9;
-		color: #fff;
+		color: #5CC1A9;
 	}
 
 	.menu__item--active:active,
 	.menu__item--active:focus,
 	.menu__item--active:hover {
-		color: #fff;
+		color: #666;
+		background-color: #FFDE5C;
+		width: 100%;
 	}
 
 	.menu__item--active + .menu__item {
@@ -728,8 +735,8 @@ ul {
 
 	.menu--open .menu__wrap {
 		float: none;
-		margin: 20px auto;
 		position: static;
+		text-align: center;
 	}
 	.post__wrapper--subpage {
 		padding: 72px 36px 20px 36px;

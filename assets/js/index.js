@@ -95,5 +95,18 @@
             main_menu.addClass("menu--open");
           }
         });
+        // 增加一个简单的当前页面active状态，不过有个缺陷，这里匹配的url和你的导航名字要一样，如果不一样，则不能识别
+        var menus = $(".menu__wrap a"), i = 0 , l = menus.length;
+        var path = window.location.pathname;
+        
+        if (path !== '/') {
+          for (; i < l; i++) {
+            var _menu = menus.eq(i);
+            _menu.removeClass('menu__item--active')
+            if (path.indexOf(_menu.text().toLowerCase()) != -1) {
+              _menu.addClass('menu__item--active')
+            }
+          }
+        }
     });
 }(jQuery));
