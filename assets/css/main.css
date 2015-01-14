@@ -160,6 +160,7 @@ main {
 .logo_text{
 	float: left;
 	padding-left: 10px;
+	width:200px;
 }
 .logo__title {
 	font-size: 25px;
