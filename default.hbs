@@ -16,7 +16,7 @@
     {{! Loading additional OpenGraph metatags}}
     {{{block "metaTags"}}}
 
-    <link rel="shortcut icon" href="{{asset "images/favicon.png"}}">
+    <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
@@ -43,21 +43,8 @@
     {{ghost_foot}}
 
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/localize.js"}}"></script>
-        <script>
-        !function(a){if(!a.Localize){a.Localize={};
-            for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);
-        </script>
-        <script>
-      Localize.initialize({
-        key: 'ftGjVzbscH2ou', 
-        rememberLanguage: true,
-        saveNewPhrases: true,
-        translateBody: true
-      });
-        </script>
-        <script type="text/javascript">
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>      
+    <script type="text/javascript">
       {{> config}}
       (function () {
       var s = document.createElement('script'); s.async = true;
@@ -65,6 +52,6 @@
       s.src = '//' + disqus_shortname + '.disqus.com/count.js';
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
       }());
-        </script>
+    </script>
 </body>
 </html>
